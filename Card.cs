@@ -1,6 +1,6 @@
 using System;
 
-namespace DeckOfCards
+namespace Card
 {
     public class Card
     {

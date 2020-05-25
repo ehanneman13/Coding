@@ -1,13 +1,15 @@
 using System;
 using System.Collections.Generic;
+using Card;
 
-namespace DeckOfCards
+namespace Deck
 {
     class Deck
     {
-        public List<Card> deckOfCards = new List<Card>();//List for 52 Cards, currently empty
+        public List<Card> DeckOfCards = new List<Card>();//List for 52 Cards, currently empty
         
-        public Deck {
+        public Deck() 
+        {
             foreach (var suit in Enum.GetValues(typeof(Card.Suit)))
             {
                 foreach (var faceValue in Enum.GetValues(typeof(Card.FaceValue)))
